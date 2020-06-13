@@ -2,7 +2,7 @@
 
   <!--<string name="dank_default_font_family">@fsans-serif-condensed</string>-->
 
-  <style name="DankTheme" parent="Theme.AppCompat.NoActionBar">
+  <style name="DankTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
     <item name="colorPrimary">@color/color_primary</item>
     <item name="colorPrimaryDark">@color/color_primary_dark</item>
     <item name="colorAccent">@color/color_accent</item>
@@ -77,7 +77,7 @@
   </style>
 
   <style name="DankSeparator">
-    <item name="android:background">@color/white_opacity_05</item>
+    <item name="android:background">@color/separator</item>
   </style>
 
   <style name="DankSeparator.VerticalContent">
@@ -157,7 +157,7 @@
 
   <style name="DankPopupMenuHeaderTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header">
     <item name="android:textAllCaps">true</item>
-    <item name="android:textColor">@color/gray_500</item>
+    <item name="android:textColor">@color/text_secondary</item>
     <item name="android:textSize">@dimen/textsize12</item>
   </style>
 
@@ -175,7 +175,7 @@
   <style name="ErrorStateEmoji">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:textColor">@color/gray_400</item>
+    <item name="android:textColor">@color/error_state_emoji_text</item>
     <item name="android:textSize">24sp</item>
   </style>
 
@@ -186,7 +186,7 @@
     <item name="android:layout_marginStart">@dimen/spacing16</item>
     <item name="android:gravity">center_horizontal</item>
     <item name="android:lineSpacingExtra">@dimen/spacing4</item>
-    <item name="android:textColor">@color/gray_500</item>
+    <item name="android:textColor">@color/text_secondary</item>
     <item name="android:textSize">@dimen/textsize14</item>
   </style>
 
@@ -202,7 +202,7 @@
     <item name="android:drawablePadding">@dimen/spacing16</item>
     <item name="android:drawableStart">@drawable/ic_error_24dp</item>
     <item name="android:gravity">center_vertical</item>
-    <item name="android:textColor">@color/red_A100</item>
+    <item name="android:textColor">@color/error_text_color</item>
   </style>
 
   <style name="DankRecyclerView">
@@ -212,8 +212,8 @@
 
   <!-- Subreddit -->
   <style name="SubredditPickerSearchFieldTheme">
-    <item name="android:colorControlNormal">@color/gray_800</item>
-    <item name="android:colorControlActivated">@color/gray_500</item>
+    <item name="android:colorControlNormal">@color/subreddit_search_field_control_normal</item>
+    <item name="android:colorControlActivated">@color/subreddit_search_field_control_activated</item>
   </style>
 
   <style name="DankButton.SubredditPicker">
@@ -270,7 +270,7 @@
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:background">?attr/selectableItemBackground</item>
-    <item name="indentationLineColor">@color/gray_850</item>
+    <item name="indentationLineColor">@color/submit_comment_item</item>
     <item name="indentationLineWidth">1dp</item>
     <item name="spacePerDepth">@dimen/spacing12</item>
   </style>
@@ -279,13 +279,13 @@
   <style name="DankMessageByline">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:textColor">@color/gray_500</item>
+    <item name="android:textColor">@color/byline_text</item>
   </style>
 
   <style name="DankMessageBody">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:textColor">@color/gray_300</item>
+    <item name="android:textColor">@color/text_tertiary</item>
     <item name="android:lineSpacingExtra">@dimen/spacing2</item>
   </style>
 
@@ -295,7 +295,7 @@
     <item name="android:layout_marginTop">@dimen/spacing8</item>
     <item name="android:background">@drawable/background_message_content</item>
     <item name="android:padding">@dimen/spacing12</item>
-    <item name="android:textColor">@color/gray_400</item>
+    <item name="android:textColor">@color/message_body_threaded</item>
     <item name="android:textIsSelectable">true</item>
   </style>
 
@@ -324,14 +324,14 @@
     <item name="android:layout_alignParentEnd">true</item>
     <item name="android:layout_margin">@dimen/spacing16</item>
     <item name="fabSize">normal</item>
-    <item name="android:tint">@color/teal_900</item>
+    <item name="android:tint">@color/dank_fab_tint</item>
     <item name="rippleColor">@color/color_accent_light</item>
   </style>
 
   <style name="DankButton.SortingMode">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:backgroundTint">@color/gray_800</item>
+    <item name="android:backgroundTint">@color/dankbutton_sorting_mode_text</item>
     <item name="android:drawablePadding">@dimen/spacing8</item>
     <item name="android:drawableStart">@drawable/ic_sort_16dp</item>
     <item name="android:elevation">10dp</item>
@@ -341,7 +341,7 @@
     <item name="android:paddingEnd">@dimen/spacing12</item>
     <item name="android:paddingStart">@dimen/spacing12</item>
     <item name="android:paddingTop">@dimen/spacing12</item>
-    <item name="android:textColor">@color/gray_300</item>
+    <item name="android:textColor">@color/text_tertiary</item>
   </style>
 
   <!-- User profile popup -->
@@ -355,7 +355,7 @@
   <style name="DankUserProfilePopupStatsValue">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:textColor">@color/gray_300</item>
+    <item name="android:textColor">@color/text_tertiary</item>
     <item name="android:textSize">@dimen/textsize18</item>
   </style>
 
@@ -363,7 +363,7 @@
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textSize">@dimen/textsize14</item>
-    <item name="android:textColor">@color/gray_500</item>
+    <item name="android:textColor">@color/text_secondary</item>
     <item name="android:layout_marginTop">@dimen/spacing4</item>
   </style>
 

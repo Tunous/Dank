@@ -155,7 +155,7 @@ public abstract class NestedOptionsPopupMenu extends PopupWindowWithMaterialTran
 
     menuStructure.optionalTitle().ifPresent(title -> {
       AppCompatTextView mainMenuTitle = new AppCompatTextView(c);
-      mainMenuTitle.setBackgroundColor(ContextCompat.getColor(c, R.color.black_opacity_10));
+      mainMenuTitle.setBackgroundColor(ContextCompat.getColor(c, R.color.popup_menu_title_background));
       mainMenuTitle.setSingleLine();
       mainMenuTitle.setEllipsize(TextUtils.TruncateAt.END);
       mainMenuTitle.setPadding(spacing16, spacing16, spacing16, spacing16);
@@ -171,7 +171,7 @@ public abstract class NestedOptionsPopupMenu extends PopupWindowWithMaterialTran
       menuButton.setCompoundDrawablePadding(spacing24);
       menuButton.setPadding(spacing16, spacing12, spacing16, spacing12);
       menuButton.setBackground(getSelectableItemBackground(c));
-      menuButton.setTextColor(ContextCompat.getColor(c, R.color.gray_200));
+      menuButton.setTextColor(ContextCompat.getColor(c, R.color.popup_menu_button_text));
       typefaceInflationInterceptor.get().applyTypefaceChanges(menuButton);
       mainMenuContainer.addView(menuButton, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 
@@ -192,7 +192,7 @@ public abstract class NestedOptionsPopupMenu extends PopupWindowWithMaterialTran
         TintableCompoundDrawableTextView subMenuTitle = new TintableCompoundDrawableTextView(c);
         subMenuTitle.setText(singleLineItem.label());
         subMenuTitle.setBackground(new LayerDrawable(new Drawable[] {
-            new ColorDrawable(ContextCompat.getColor(c, R.color.black_opacity_10)),
+            new ColorDrawable(ContextCompat.getColor(c, R.color.popup_menu_title_background)),
             getSelectableItemBackground(c)
         }));
         subMenuTitle.setCompoundDrawablePadding(spacing24);
@@ -213,7 +213,7 @@ public abstract class NestedOptionsPopupMenu extends PopupWindowWithMaterialTran
           subMenuButton.setText(subItem.label());
           subMenuButton.setBackgroundDrawable(getSelectableItemBackground(c));
           subMenuButton.setPadding(spacing16, spacing12, spacing16, spacing12);
-          subMenuButton.setTextColor(ContextCompat.getColor(c, R.color.gray_200));
+          subMenuButton.setTextColor(ContextCompat.getColor(c, R.color.popup_menu_button_text));
           subMenuButton.setOnClickListener(o -> handleAction(c, subItem.id()));
           subMenuButton.setMaxLines(3);
           subMenuButton.setEllipsize(TextUtils.TruncateAt.END);

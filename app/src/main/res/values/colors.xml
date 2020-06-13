@@ -19,19 +19,20 @@
       100% = FF H
   -->
 
-  <color name="color_primary">#202020</color>
-  <color name="color_primary_dark">#1b1b1b</color>
-  <color name="color_accent">@color/teal_A400</color>
-  <color name="color_accent_light">@color/teal_A100</color>
-  <color name="color_accent_dark">@color/teal_A700</color>
-  <color name="window_background">#292929</color>
-  <color name="dialog_background">#393a3c</color>
+  <color name="color_primary">@color/teal_A400</color>
+  <color name="color_primary_dark">@color/teal_A700</color>
+  <color name="color_accent">@color/purple_A400</color>
+  <color name="color_accent_light">@color/purple_A100</color>
+  <color name="color_accent_dark">@color/purple_A700</color>
+  <color name="window_background">#FFFFF0</color>
+  <color name="dialog_background">#EFE0D0</color>
+  <color name="separator">@color/black_opacity_05</color>
   <color name="dialog_like_activity_window_background">@color/black_opacity_40</color>
 
-  <color name="color_accent_opacity_20">#331DE9B6</color>
+  <color name="color_accent_opacity_20">#33D500F9</color>
 
-  <color name="toolbar">@color/gray_900</color>
-  <color name="navigation_bar">@color/gray_950</color>
+  <color name="toolbar">@color/color_primary</color>
+  <color name="navigation_bar">@color/color_primary_dark</color>
 
   <color name="upvote">@color/deep_orange_300</color>   <!-- Picked from the material palette. Slightly varies from what Reddit uses. -->
   <color name="downvote">#9494FF</color>                <!-- This is what Reddit uses. Couldn't find anything close in the material palette. -->
@@ -47,55 +48,103 @@
   <color name="list_item_swipe_more_options">@color/blue_gray_400</color>
   <color name="list_item_swipe_new_tab">@color/teal_400</color>
   <color name="list_item_swipe_reply">@color/yellow_800</color>
+  <color name="list_item_drag_tint">@color/gray_500</color>
+  <color name="list_item_comment_tint">@color/gray_400</color>
+  <color name="list_item_submission_tint">@color/gray_200</color>
+  <color name="list_item_submission_comment_reply">@color/gray_200</color>
 
   <color name="vote_direction_none">@color/gray_500</color>
   <color name="vote_direction_upvote">@color/upvote</color>
   <color name="vote_direction_downvote">@color/downvote</color>
 
   <!-- User Profile -->
-  <color name="userprofile_unread_messages">@color/orange_600</color>
-  <color name="userprofile_no_messages">@color/gray_300</color>
+  <color name="userprofile_unread_messages">@color/deep_orange_400</color>
+  <color name="userprofile_no_messages">@color/gray_700</color>
 
   <!-- Subreddit -->
-  <color name="subreddit_submission_item_byline">@color/gray_600</color>
+  <color name="subreddit_submission_item_byline">@color/gray_700</color>
   <color name="subreddit_subscribe">@color/color_accent</color>
-  <color name="subredditpicker_subreddit_button_tint_normal">#1b1b1b</color>
-  <color name="subredditpicker_subreddit_button_tint_selected">#0b0b0b</color>
-  <color name="subredditpicker_subreddit_button_text_normal">@color/gray_400</color>
-  <color name="subredditpicker_subreddit_button_text_hidden">@color/gray_700</color>
+  <color name="subredditpicker_subreddit_button_tint_normal">@color/gray_50</color>
+  <color name="subredditpicker_subreddit_button_tint_selected">@color/gray_100</color>
+  <color name="subredditpicker_subreddit_button_text_normal">@color/gray_600</color>
+  <color name="subredditpicker_subreddit_button_text_hidden">@color/gray_300</color>
 
-  <color name="submission_option_button_byline">@color/white_opacity_60</color>
+  <color name="submission_option_button_byline">@color/black_opacity_60</color>
 
   <!-- Submission -->
-  <color name="submission_link_title">@color/white_opacity_90</color>
-  <color name="submission_link_byline">@color/white_opacity_50</color>
-  <color name="submission_link_title_light_background">@color/black_opacity_90</color>
-  <color name="submission_link_byline_light_background">@color/black_opacity_50</color>
-  <color name="submission_link_background">#3A3A3A</color>
-  <color name="submission_comment_byline_author">@color/blue_gray_300</color>
+  <color name="submission_link_title">@color/black_opacity_90</color>
+  <color name="submission_link_byline">@color/black_opacity_50</color>
+  <color name="submission_link_title_light_background">@color/white_opacity_90</color>
+  <color name="submission_link_byline_light_background">@color/white_opacity_50</color>
+  <color name="submission_link_background">#A3A3A3</color>
+  <color name="submission_comment_byline_author">@color/cyan_800</color>
   <color name="submission_comment_byline_author_op">@color/color_accent</color>
   <color name="submission_comment_byline_default_color">@color/vote_direction_none</color>
-  <color name="submission_comment_body_expanded">@color/gray_200</color>
-  <color name="submission_comment_body_collapsed">@color/gray_600</color>
+  <color name="submission_comment_body_expanded">@color/gray_800</color>
+  <color name="submission_comment_body_collapsed">@color/gray_400</color>
   <color name="submission_comment_byline_failed_to_post">@color/error_text_color</color>
-  <color name="submission_media_content_background_padding">@color/gray_900</color>
+  <color name="submission_media_content_background_padding">@color/color_primary</color>
   <color name="submission_comment_background">@color/window_background</color>
-  <color name="submission_comment_background_focused">@color/blue_gray_900</color>
-  <color name="submission_fab">@color/gray_800</color>
-
-  <color name="submission_videoplayer_buffer">@color/gray_900</color>
-  <color name="submission_videoplayer_progress">@color/gray_850</color>
+  <color name="submission_comment_background_focused">@color/teal_300</color>
+  <color name="submission_fab">@color/color_accent_light</color>
 
   <!-- Media -->
-  <color name="videoplayer_buffer">@color/gray_800</color>
+  <color name="submission_videoplayer_buffer">@color/gray_600</color>
+  <color name="submission_videoplayer_progress">@color/gray_400</color>
 
   <!-- App shortcuts -->
-  <color name="app_shortcut_background">@color/blue_gray_50</color>
+  <color name="app_shortcut_background">@color/teal_900</color>
   <color name="appshortcut_swipe_delete">@color/red_300</color>
 
   <!-- Text -->
-  <color name="text_primary">@color/gray_200</color>
-  <color name="text_secondary">@color/gray_500</color>
+  <color name="text_primary">@color/gray_800</color>
+  <color name="text_secondary">@color/gray_600</color>
+  <color name="text_tertiary">@color/gray_700</color>
+  <color name="text_light">@color/gray_900</color>
+  <color name="text_dark">@color/gray_500</color>
+
+  <!-- Preferences -->
+  <color name="dank_pref_button">@color/white</color>
+
+  <!-- One use codes -->
+  <color name="comment_threads">@color/color_accent_dark</color>
+  <color name="title_background">@color/yellow_400</color>
+  <color name="title_text">@color/white_opacity_75</color>
+  <color name="static_thumbnail">@color/gray_900</color>
+  <color name="popup_menu_title_background">@color/white_opacity_10</color>
+  <color name="popup_menu_button_text">@color/gray_800</color>
+  <color name="walkthrough_title_text">@color/light_blue_800</color>
+  <color name="nsfw">@color/text_tertiary</color>
+  <color name="sticky">@color/color_accent</color>
+
+  <color name="subreddit_background_tint">@color/gray_200</color>
+  <color name="progress_bar">@color/gray_300</color>
+  <color name="dialog_image">@color/gray_700</color>
+  <color name="image_album_viewer">@color/teal_400</color>
+  <color name="video_album_viewer">@color/teal_300</color>
+  <color name="floating_action_button_ripple">@color/gray_500</color>
+  <color name="search_drawable_tint">@color/gray_700</color>
+  <color name="subreddit_picker_text_hint">@color/text_secondary</color>
+  <color name="subreddit_picker_progress_bar">@color/gray_400</color>
+  <color name="profile_indeterminateTint">@color/gray_300</color>
+  <color name="error_state_emoji_text">@color/gray_600</color>
+  <color name="subreddit_search_field_control_normal">@color/gray_200</color>
+  <color name="subreddit_search_field_control_activated">@color/gray_500</color>
+  <color name="submit_comment_item">@color/gray_700</color>
+  <color name="byline_text">@color/gray_500</color>
+  <color name="message_body_threaded">@color/gray_600</color>
+  <color name="dankbutton_sorting_mode_text">@color/gray_200</color>
+  <color name="dank_fab_tint">@color/teal_100</color>
+  <color name="album_viewer_background">@color/black_opacity_30</color>
+  <color name="background_subreddit_submission_sticky">#CC00FFCC</color>
+  <color name="background_subreddit_submission_nsfw">@color/pink_100</color>
+
+  <color name="drawable">@color/black</color>
+  <color name="drawable_inverse">@color/white</color>
+  <color name="drawable_inverse_with_alpha">#FFFFFFFF</color>  <!-- unsure if necessary te much time to test -->
+  <color name="drawable_opacity_80">@color/black_opacity_80</color>
+  <color name="drawable_opacity_50">@color/black_opacity_50</color>
+  <color name="drawable_opacity_05">@color/black_opacity_05</color>
 
   <!-- Indentation Colors / Comments Depth Level -->
   <array name="indentation_colors">

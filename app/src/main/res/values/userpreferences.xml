@@ -38,6 +38,12 @@
   <string name="userprefs_gestures_summary_disabled">Disabled</string>
   <string name="userprefs_gestures_summary_last_separator">and</string>
 
+  <string name="userprefs_group_theme">Theme</string>
+  <string name="userprefs_theme_system">Use System Theme</string>
+  <string name="userprefs_theme_battery">On Low Battery</string>
+  <string name="userprefs_theme_light">Light Theme</string>
+  <string name="userprefs_theme_dark">Dark Theme</string>
+
   <string name="userprefs_gestures_group_swipe_start_to_end">Swipe left to right</string>
   <string name="userprefs_gestures_group_swipe_end_to_start">Swipe right to left</string>
 
@@ -171,7 +177,7 @@
   <style name="DankUserPreferenceButton">
     <item name="android:clickable">true</item>
     <item name="android:foreground">?attr/selectableItemBackground</item>
-    <item name="android:background">@color/gray_850</item>
+    <item name="android:background">@color/dank_pref_button</item>
     <item name="android:translationZ">1dp</item>
     <item name="android:paddingTop">@dimen/userprefs_item_padding</item>
   </style>

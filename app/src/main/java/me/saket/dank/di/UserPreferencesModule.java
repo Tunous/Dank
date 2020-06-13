@@ -24,6 +24,7 @@ import me.saket.dank.BuildConfig;
 import me.saket.dank.data.CachePreFillThing;
 import me.saket.dank.ui.preferences.DefaultWebBrowser;
 import me.saket.dank.ui.preferences.NetworkStrategy;
+import me.saket.dank.ui.preferences.ThemeOption;
 import me.saket.dank.ui.preferences.TypefaceResource;
 import me.saket.dank.ui.subreddit.SubmissionSwipeAction;
 import me.saket.dank.ui.subreddit.uimodels.SubredditSubmissionImageStyle;
@@ -121,6 +122,19 @@ public class UserPreferencesModule {
   @Named("show_colored_comments_tree")
   Preference<Boolean> showColoredCommentsTreePref(@Named("user_prefs") RxSharedPreferences rxPrefs) {
     return rxPrefs.getBoolean("show_colored_comments_tree", false);
+  }
+
+  @Provides
+  RxPreferencesEnumTypeAdapter<ThemeOption> themeEnumTypeAdapter() {
+    return new RxPreferencesEnumTypeAdapter<>(ThemeOption.class);
+  }
+
+  @Provides
+  Preference<ThemeOption> themePref(
+      @Named("user_prefs") RxSharedPreferences rxPrefs,
+      RxPreferencesEnumTypeAdapter<ThemeOption> enumAdapter
+  ) {
+    return rxPrefs.getObject("theme", ThemeOption.LIGHT, enumAdapter);
   }
 
   @Provides

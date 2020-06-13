@@ -25,6 +25,7 @@
 
   <color name="transparent">@android:color/transparent</color>
   <color name="white_opacity_02_5">#06FFFFFF</color>
+  <color name="white_opacity_10">#1AFFFFFF</color>
   <color name="white_opacity_05">#0CFFFFFF</color>
   <color name="white_opacity_20">#33FFFFFF</color>
   <color name="white_opacity_30">#4CFFFFFF</color>

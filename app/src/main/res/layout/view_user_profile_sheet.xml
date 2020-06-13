@@ -31,7 +31,7 @@
       android:layout_height="wrap_content"
       android:layout_marginBottom="-4dp"
       android:indeterminate="true"
-      android:indeterminateTint="@color/gray_700" />
+      android:indeterminateTint="@color/profile_indeterminateTint" />
   </LinearLayout>
 
   <me.saket.dank.widgets.TintableCompoundDrawableTextView

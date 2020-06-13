@@ -18,7 +18,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_gravity="center"
-      tools:background="@color/blue_gray_700"
+      tools:background="@color/image_album_viewer"
       tools:layout_height="@dimen/mediaalbumviewer_image_height_when_empty" />
 
     <me.saket.dank.widgets.ProgressWithFileSizeView
@@ -58,7 +58,7 @@
     android:id="@+id/albumviewer_image_title_description_dimming"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_opacity_30"
+    android:background="@color/album_viewer_background"
     android:visibility="gone" />
 
   <me.saket.dank.widgets.MediaAlbumViewerTitleDescriptionView

@@ -40,7 +40,7 @@
       android:layout_marginEnd="@dimen/spacing16"
       android:layout_marginStart="@dimen/spacing16"
       android:lineSpacingExtra="@dimen/spacing2"
-      android:textColor="@color/gray_100"
+      android:textColor="@color/text_light"
       android:textSize="@dimen/textsize16"
       android:textIsSelectable="false"
       tools:text="I did a thing in Photoshop, and am fairly proud of it." />
@@ -53,7 +53,7 @@
       android:layout_marginEnd="@dimen/spacing16"
       android:layout_marginStart="@dimen/spacing16"
       android:textAllCaps="true"
-      android:textColor="@color/gray_600"
+      android:textColor="@color/text_dark"
       android:textSize="@dimen/textsize12"
       tools:ignore="SelectableText"
       tools:text="/r/pics" />

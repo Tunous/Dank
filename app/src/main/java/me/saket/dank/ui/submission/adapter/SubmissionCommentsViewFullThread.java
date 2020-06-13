@@ -54,7 +54,7 @@ public interface SubmissionCommentsViewFullThread {
       messageView.setText(new Truss()
           .append(messageView.getContext().getString(R.string.submission_comments_viewing_single_comments_thread))
           .append("\n")
-          .pushSpan(new ForegroundColorSpan(ContextCompat.getColor(messageView.getContext(), R.color.cyan_400)))
+          .pushSpan(new ForegroundColorSpan(ContextCompat.getColor(messageView.getContext(), R.color.comment_threads)))
           .append(messageView.getContext().getString(R.string.submission_comments_view_all_comments))
           .popSpan()
           .build());

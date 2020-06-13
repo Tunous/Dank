@@ -2,6 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
   android:shape="rectangle">
 
-  <solid android:color="@color/white_opacity_80" />
+  <solid android:color="@color/drawable_opacity_80" />
   <corners android:radius="@dimen/card_corner_radius" />
 </shape>

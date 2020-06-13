@@ -1,5 +1,6 @@
 package me.saket.dank.di;
 
+import com.f2prateek.rx.preferences2.Preference;
 import com.squareup.moshi.Moshi;
 
 import javax.inject.Singleton;
@@ -32,6 +33,7 @@ import me.saket.dank.ui.media.MediaVideoFragment;
 import me.saket.dank.ui.preferences.HiddenPreferencesActivity;
 import me.saket.dank.ui.preferences.MessageCheckFrequencyPreferencePopup;
 import me.saket.dank.ui.preferences.PreferenceGroupsScreen;
+import me.saket.dank.ui.preferences.ThemeOption;
 import me.saket.dank.ui.preferences.TypefaceInflationInterceptor;
 import me.saket.dank.ui.preferences.gestures.submissions.SubmissionGesturesPreferenceScreen;
 import me.saket.dank.ui.preferences.gestures.submissions.SubmissionSwipeActionPreferenceChoicePopup;
@@ -86,6 +88,8 @@ public interface RootComponent {
   TypefaceInflationInterceptor typefaceInflationInterceptor();
 
   CrashReporter crashReporter();
+
+  Preference<ThemeOption> themePreference();
 
   void inject(MediaAlbumViewerActivity target);
 

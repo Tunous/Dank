@@ -43,7 +43,7 @@
         android:contentDescription="@string/appshortcuts_cd_reorder_shortcut"
         android:padding="@dimen/spacing16"
         android:src="@drawable/ic_drag_handle_24dp"
-        android:tint="@color/gray_500" />
+        android:tint="@color/list_item_drag_tint" />
     </LinearLayout>
 
     <View

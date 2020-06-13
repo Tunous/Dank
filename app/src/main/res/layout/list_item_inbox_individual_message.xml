@@ -16,7 +16,7 @@
     android:layout_marginStart="@dimen/spacing16"
     android:ellipsize="end"
     android:maxLines="1"
-    android:textColor="@color/gray_200"
+    android:textColor="@color/text_primary"
     tools:text="Litho: A Declarative UI Framework for Android" />
 
   <TextView
@@ -42,7 +42,7 @@
     <TextView
       android:id="@+id/individualmessage_sender_information"
       android:layout_width="match_parent"
-      android:textColor="@color/gray_500"
+      android:textColor="@color/text_secondary"
       android:layout_marginBottom="@dimen/spacing8"
       tools:text="Reply from kn0thing via r/Android"
       android:layout_height="wrap_content" />

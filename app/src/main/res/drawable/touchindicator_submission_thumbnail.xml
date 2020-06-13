@@ -6,7 +6,7 @@
     <shape android:shape="oval">
       <!-- The color of this mask has an effect on the highlight color.
            Yet to understand why. -->
-      <solid android:color="@color/white_opacity_50" />
+      <solid android:color="@color/drawable_opacity_50" />
     </shape>
   </item>
 </ripple>

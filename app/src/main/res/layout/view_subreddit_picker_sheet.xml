@@ -61,7 +61,7 @@
     android:layout_marginTop="6dp"
     android:contentDescription="@string/subredditpicker_search_hint_go_to_subreddit"
     android:src="@drawable/ic_search_24dp"
-    android:tint="@color/gray_700" />
+    android:tint="@color/search_drawable_tint" />
 
   <EditText
     android:id="@+id/subredditpicker_search"
@@ -76,8 +76,8 @@
     android:imeOptions="actionGo|flagNoFullscreen"
     android:inputType="textCapWords"
     android:paddingStart="32dp"
-    android:textColor="@color/gray_300"
-    android:textColorHint="@color/gray_700"
+    android:textColor="@color/text_tertiary"
+    android:textColorHint="@color/subreddit_picker_text_hint"
     android:theme="@style/SubredditPickerSearchFieldTheme"
     tools:ignore="RtlSymmetry" />
 
@@ -108,7 +108,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_gravity="center"
-      android:indeterminateTint="@color/gray_600" />
+      android:indeterminateTint="@color/subreddit_picker_progress_bar" />
   </FrameLayout>
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton

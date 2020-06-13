@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:layout_gravity="center"
-        app:background="@color/blue_gray_800"
+        app:background="@color/video_album_viewer"
         app:useTextureViewBacking="true" />
 
       <FrameLayout
@@ -45,7 +45,7 @@
     android:id="@+id/albumviewer_video_title_description_dimming"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_opacity_30" />
+    android:background="@color/album_viewer_background" />
 
   <me.saket.dank.widgets.MediaAlbumViewerTitleDescriptionView
     android:id="@+id/albumviewer_video_title_description"

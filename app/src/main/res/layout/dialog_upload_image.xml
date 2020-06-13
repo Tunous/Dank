@@ -16,7 +16,7 @@
       android:id="@+id/uploadimage_image"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="@color/gray_700"
+      android:background="@color/dialog_image"
       android:contentDescription="@string/cd_composereply_uploadimage_image_being_uploaded"
       android:scaleType="centerCrop"
       android:tint="@color/black_opacity_30" />
@@ -135,7 +135,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/composereply_uploadimage_cancel"
-      android:textColor="@color/gray_500" />
+      android:textColor="@color/text_secondary" />
 
     <Button
       android:id="@+id/uploadimage_insert"

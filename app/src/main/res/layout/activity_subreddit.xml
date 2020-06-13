@@ -70,7 +70,7 @@
       style="@style/DankButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:backgroundTint="@color/gray_800"
+      android:backgroundTint="@color/subreddit_background_tint"
       android:minHeight="0dp"
       android:minWidth="0dp"
       android:paddingBottom="@dimen/spacing12"

@@ -286,13 +286,13 @@ public class SubredditUiConstructor {
     }
     if (submission.isNsfw()) {
       bylineBuilder.append(" \u00b7 ");
-      bylineBuilder.pushSpan(new ForegroundColorSpan(ContextCompat.getColor(c, R.color.pink_A100)));
+      bylineBuilder.pushSpan(new ForegroundColorSpan(ContextCompat.getColor(c, R.color.nsfw)));
       bylineBuilder.append("NSFW");
       bylineBuilder.popSpan();
     }
     if (submission.isStickied()) {
       bylineBuilder.append(" \u00b7 ");
-      bylineBuilder.pushSpan(new ForegroundColorSpan(ContextCompat.getColor(c, R.color.green_A100)));
+      bylineBuilder.pushSpan(new ForegroundColorSpan(ContextCompat.getColor(c, R.color.sticky)));
       bylineBuilder.append("STICKY");
       bylineBuilder.popSpan();
     }
@@ -401,7 +401,7 @@ public class SubredditUiConstructor {
     return SubredditSubmission.UiModel.Thumbnail.builder()
         .remoteUrl(Optional.empty())
         .scaleType(ImageView.ScaleType.CENTER_INSIDE)
-        .tintColor(Optional.of(ContextCompat.getColor(c, R.color.gray_100)))
+        .tintColor(Optional.of(ContextCompat.getColor(c, R.color.static_thumbnail)))
         .backgroundRes(Optional.of(R.drawable.background_submission_self_thumbnail));
   }
 

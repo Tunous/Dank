@@ -9,6 +9,8 @@ import android.os.Build;
 import android.os.Process;
 import android.os.StrictMode;
 
+import androidx.appcompat.app.AppCompatDelegate;
+
 import com.facebook.stetho.Stetho;
 import com.gabrielittner.threetenbp.LazyThreeTen;
 import com.tspoon.traceur.Traceur;
@@ -81,6 +83,14 @@ public class DankApplication extends Application {
     Observable<Long> initialDelayStream = Observable.timer(5, TimeUnit.SECONDS, Schedulers.io())
         .replay()
         .refCount();
+
+    referenceHolders.add(
+        Dank.dependencyInjector().themePreference()
+            .asObservable()
+            .subscribe(option -> {
+              setTheme(option.getTheme());
+              AppCompatDelegate.setDefaultNightMode(option.getMode());
+            }));
 
     referenceHolders.add(
         Dank.dependencyInjector().userAuthListener()

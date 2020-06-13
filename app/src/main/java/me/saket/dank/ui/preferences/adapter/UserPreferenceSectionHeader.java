@@ -5,9 +5,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.auto.value.AutoValue;
+
+import java.util.Objects;
 
 import javax.inject.Inject;
 
@@ -32,12 +35,13 @@ public interface UserPreferenceSectionHeader  {
 
     public abstract Optional<String> description();
 
-    public static UiModel create(String label, String description) {
-      return new AutoValue_UserPreferenceSectionHeader_UiModel(label.hashCode(), label, Optional.of(description));
+    public static UiModel create(String label, @Nullable String description) {
+      int adapterId = Objects.hash(label, Type.SECTION_HEADER);
+      return new AutoValue_UserPreferenceSectionHeader_UiModel(adapterId, label, Optional.ofNullable(description));
     }
 
     public static UiModel create(String label) {
-      return new AutoValue_UserPreferenceSectionHeader_UiModel(label.hashCode(), label, Optional.empty());
+      return create(label, null);
     }
   }
 

@@ -80,7 +80,7 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_alignParentEnd="true"
-    android:background="@color/gray_900">
+    android:background="@color/color_primary">
 
     <me.saket.dank.ui.compose.TextFormatToolbarView
       android:id="@+id/composereply_format_toolbar"

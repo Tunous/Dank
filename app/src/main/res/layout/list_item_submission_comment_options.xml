@@ -28,7 +28,7 @@
       android:drawableStart="@drawable/ic_mode_comment_16dp"
       android:gravity="center_vertical"
       android:paddingStart="@dimen/spacing2"
-      android:textColor="@color/gray_500"
+      android:textColor="@color/text_secondary"
       tools:text="251" />
 
     <me.saket.dank.widgets.TintableCompoundDrawableButton
@@ -42,7 +42,7 @@
       android:drawableStart="@drawable/ic_sort_20dp"
       android:minWidth="0dp"
       android:textAllCaps="false"
-      android:textColor="@color/gray_500"
+      android:textColor="@color/text_secondary"
       tools:text="Best" />
 
     <me.saket.dank.widgets.TintableCompoundDrawableButton
@@ -56,7 +56,7 @@
       android:minWidth="0dp"
       android:text="@string/submission_comments_refresh"
       android:textAllCaps="false"
-      android:textColor="@color/gray_500" />
+      android:textColor="@color/text_secondary" />
   </LinearLayout>
 
   <View style="@style/DankSeparator.VerticalContent" />

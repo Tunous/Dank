@@ -39,7 +39,7 @@
       android:layout_gravity="center"
       android:src="@drawable/ic_link_24dp"
       tools:ignore="ContentDescription"
-      tools:tint="@color/gray_400" />
+      tools:tint="@color/list_item_comment_tint" />
   </FrameLayout>
 
   <LinearLayout

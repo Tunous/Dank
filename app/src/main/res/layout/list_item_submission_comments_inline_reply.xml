@@ -33,7 +33,7 @@
         android:contentDescription="@string/cd_submission_comment_reply_discard"
         android:padding="@dimen/spacing12"
         android:src="@drawable/ic_close_20dp"
-        android:tint="@color/gray_400" />
+        android:tint="@color/list_item_comment_tint" />
 
       <TextView
         android:id="@+id/item_comment_reply_author_hint"
@@ -57,7 +57,7 @@
         android:padding="@dimen/spacing8"
         android:layout_marginTop="-1dp"
         android:src="@drawable/ic_gif_32dp"
-        android:tint="@color/gray_400" />
+        android:tint="@color/list_item_comment_tint" />
 
       <ImageButton
         android:id="@+id/item_comment_reply_go_fullscreen"
@@ -67,7 +67,7 @@
         android:contentDescription="@string/cd_submission_comment_reply_go_fullscreen"
         android:padding="@dimen/spacing12"
         android:src="@drawable/ic_fullscreen_24dp"
-        android:tint="@color/gray_400" />
+        android:tint="@color/list_item_comment_tint" />
 
       <ImageButton
         android:id="@+id/item_comment_reply_send"
@@ -77,7 +77,7 @@
         android:contentDescription="@string/cd_submission_comment_reply_send"
         android:padding="@dimen/spacing12"
         android:src="@drawable/ic_send_20dp"
-        android:tint="@color/gray_400" />
+        android:tint="@color/list_item_comment_tint" />
     </LinearLayout>
 
     <View

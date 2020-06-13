@@ -236,8 +236,8 @@ class SubmissionUiConstructor @Inject constructor(
 
       titleBuilder = titleBuilder
           .pushSpan(RoundedBackgroundSpan(
-              color(context, R.color.yellow_600),
-              color(context, R.color.black_opacity_75),
+              color(context, R.color.title_background),
+              color(context, R.color.title_text),
               context.resources.getDimensionPixelSize(R.dimen.spacing2),
               context.resources.getDimensionPixelSize(R.dimen.textsize12),
               context.resources.getDimensionPixelSize(R.dimen.spacing16),

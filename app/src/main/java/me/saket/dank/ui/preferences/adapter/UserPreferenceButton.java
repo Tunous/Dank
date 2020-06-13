@@ -5,10 +5,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.auto.value.AutoValue;
 import com.jakewharton.rxrelay2.PublishRelay;
+
+import java.util.Objects;
 
 import javax.inject.Inject;
 
@@ -38,12 +41,13 @@ public interface UserPreferenceButton {
 
     public abstract UserPreferenceClickListener clickListener();
 
-    public static UiModel create(String title, String summary, UserPreferenceClickListener clickListener) {
-      return new AutoValue_UserPreferenceButton_UiModel(title.hashCode(), title, Optional.of(summary), clickListener);
+    public static UiModel create(String title, @Nullable String summary, UserPreferenceClickListener clickListener) {
+      int adapterId = Objects.hash(title, Type.BUTTON);
+      return new AutoValue_UserPreferenceButton_UiModel(adapterId, title, Optional.ofNullable(summary), clickListener);
     }
 
     public static UiModel create(String title, UserPreferenceClickListener clickListener) {
-      return new AutoValue_UserPreferenceButton_UiModel(title.hashCode(), title, Optional.empty(), clickListener);
+      return create(title,null, clickListener);
     }
   }
 

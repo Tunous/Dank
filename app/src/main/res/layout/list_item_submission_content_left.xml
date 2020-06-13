@@ -44,7 +44,7 @@
     tools:ignore="ContentDescription"
     tools:scaleType="centerInside"
     tools:src="@drawable/ic_link_24dp"
-    tools:tint="@color/gray_200" />
+    tools:tint="@color/list_item_submission_tint" />
 
   <TextView
     android:id="@+id/submission_item_title"
@@ -54,7 +54,7 @@
     android:layout_marginTop="@dimen/spacing12"
     android:layout_marginEnd="@dimen/subreddit_submission_padding"
     android:lineSpacingExtra="@dimen/spacing2"
-    android:textColor="@color/gray_100"
+    android:textColor="@color/text_light"
     android:textIsSelectable="false"
     android:textSize="@dimen/textsize16"
     app:layout_constraintEnd_toEndOf="parent"

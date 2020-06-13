@@ -24,7 +24,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/spacing12"
     android:layout_toEndOf="@+id/item_preferencegroup_icon"
-    android:textColor="@color/gray_100"
+    android:textColor="@color/text_light"
     android:textIsSelectable="false"
     tools:text="@string/userpreferences_look_and_feel" />
 
@@ -35,7 +35,7 @@
     android:layout_alignStart="@+id/item_preferencegroup_title"
     android:layout_below="@+id/item_preferencegroup_title"
     android:layout_marginBottom="@dimen/spacing12"
-    android:textColor="@color/gray_600"
+    android:textColor="@color/text_dark"
     android:textIsSelectable="false"
     tools:text="@string/userpreferences_look_and_feel_description" />
 

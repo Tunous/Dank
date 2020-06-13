@@ -111,7 +111,7 @@ public class SubmissionGesturesWalkthrough {
       titleSwitcherView.setFactory(() -> {
         TextView titleView = new TextView(context);
         titleView.setLineSpacing(res.getDimensionPixelSize(R.dimen.spacing2), 1f);
-        titleView.setTextColor(ContextCompat.getColor(context, R.color.amber_200));
+        titleView.setTextColor(ContextCompat.getColor(context, R.color.walkthrough_title_text));
         titleView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         typefaceInflationInterceptor.applyTypefaceChanges(titleView);
         return titleView;
@@ -121,7 +121,7 @@ public class SubmissionGesturesWalkthrough {
         TextView messageView = new TextView(context);
         messageView.setEllipsize(TextUtils.TruncateAt.END);
         messageView.setLineSpacing(res.getDimensionPixelSize(R.dimen.spacing2), 1f);
-        messageView.setTextColor(ContextCompat.getColor(context, R.color.gray_500));
+        messageView.setTextColor(ContextCompat.getColor(context, R.color.text_secondary));
         messageView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         typefaceInflationInterceptor.applyTypefaceChanges(messageView);
         return messageView;
