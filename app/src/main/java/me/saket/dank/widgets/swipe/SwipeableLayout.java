@@ -9,9 +9,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.FrameLayout; 
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.IntRange;
@@ -134,6 +135,16 @@ public class SwipeableLayout extends FrameLayout {
 
 // ======== SWIPE ======== //
 
+  int valueY = 0;
+
+  @Override
+  public boolean onInterceptTouchEvent(MotionEvent event) {
+    if(event.getAction() == MotionEvent.ACTION_DOWN || event.getAction() == MotionEvent.ACTION_UP  || event.getAction() == MotionEvent.ACTION_MOVE){
+      valueY = (int)event.getY();
+    }
+    return false;
+  }
+
   public void setSwipeTranslation(float translationX) {
     if (!isLaidOut()) {
       Timber.w("SwipeableLayout hasn't been measured yet!");
@@ -162,6 +173,12 @@ public class SwipeableLayout extends FrameLayout {
       swipeActionTriggerDrawable.setBounds((int) translationX, 0, (int) (getWidth() + translationX), getHeight());
 
       // Move the icon along with the View being swiped.
+      if (valueY > (actionIconView.getHeight() / 2)) {
+        actionIconView.setY(valueY - (actionIconView.getHeight() / 2));
+      } else {
+        actionIconView.setY(valueY);
+      }
+
       if (swipingFromEndToStart) {
         actionIconView.setTranslationX(swipeableChild.getRight() + translationX);
       } else {
