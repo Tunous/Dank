@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="composereply_compose_field_hint">Napisz odpowiedź…</string>
+  <string name="composereply_send">Wyślij</string>
+  <string name="composereply_title_reply_to">re: %s</string>
+  <string name="cd_textformat_bold">Pogrubienie</string>
+  <string name="cd_textformat_italic">Kursywa</string>
+  <string name="cd_textformat_insert_link">Wstaw odnośnik</string>
+  <string name="cd_textformat_insert_text_emoji">Wstaw emoji</string>
+  <string name="cd_textformat_insert_image">Prześlij zdjęcie</string>
+  <string name="cd_textformat_insert_gif">Wstaw GIF</string>
+  <string name="cd_textformat_strikethrough">Przekreślenie</string>
+  <string name="cd_textformat_quote">Cytat</string>
+  <string name="cd_textformat_superscript">Indeks górny</string>
+  <string name="cd_textformat_code">Sformatowany kod</string>
+  <string name="cd_textformat_header">Nagłówek</string>
+  <string name="cd_textformat_spoiler">Spoiler</string>
+  <string name="composereply_redo">Przywróć</string>
+  <string name="composereply_undo">Cofnij</string>
+  <string name="cd_composereply_undo">Cofnij ostatnią zmianę</string>
+  <string name="cd_composereply_redo">Przywróć ostatnią zmianę</string>
+  <string name="composereply_empty_title_placeholder">Odpowiedz</string>
+  <string name="composereply_error_empty_field">To nie może być puste ಠ_ಠ</string>
+  <string name="composereply_addlink_error_empty_field">To nie może być puste ಠ_ಠ</string>
+  <string name="composereply_addlink_title">Tytuł</string>
+  <string name="composereply_addlink_url">URL</string>
+  <string name="composereply_addlink_cancel">Anuluj</string>
+  <string name="composereply_addlink_insert">Wstaw</string>
+  <string name="composereply_paste_from_clipboard_hint">Dotknij, aby wkleić adres URL ze schowka\n%s</string>
+  <string name="composereply_uploadimage_title">Dodaj tytuł (opcjonalnie)</string>
+  <string name="composereply_uploadimage_cancel">Anuluj</string>
+  <string name="composereply_uploadimage_insert">Wstaw</string>
+  <string name="cd_composereply_uploadimage_image_being_uploaded">Obraz jest przesyłany</string>
+  <string name="composereply_uploadimage_uploading">Przesyłanie…</string>
+  <string name="composereply_uploadimage_failed_generic">(╯°□°）╯︵ ┻━┻ \n\nNie udało się przesłać obrazu. Dotknij, aby ponowić.</string>
+  <string name="composereply_uploadimage_tap_to_retry">Dotknij aby ponowić.</string>
+  <!-- Full-stop in english. -->
+  <string name="composereply_uploadimage_error_file_size_too_large">¯\\_(ツ)_/¯ \n\nImgur odrzucił obraz ze względu na jego duży rozmiar. Spróbuj użyć obrazu 10mb lub mniejszego.</string>
+</resources>

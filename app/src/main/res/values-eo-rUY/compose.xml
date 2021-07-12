@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="composereply_compose_field_hint">Tajpi respondon…</string>
+  <string name="composereply_send">Sendi</string>
+  <string name="composereply_title_reply_to">re: %s</string>
+  <string name="cd_textformat_bold">Grasa</string>
+  <string name="cd_textformat_italic">Kursiva</string>
+  <string name="cd_textformat_insert_link">Enmeti ligilon</string>
+  <string name="cd_textformat_insert_text_emoji">Enmeti tekst-emoĝion</string>
+  <string name="cd_textformat_insert_image">Alŝuti bildon</string>
+  <string name="cd_textformat_insert_gif">Enmeti movbildon</string>
+  <string name="cd_textformat_strikethrough">Trastreka</string>
+  <string name="cd_textformat_quote">Citi</string>
+  <string name="cd_textformat_superscript">Suprateksto</string>
+  <string name="cd_textformat_code">Antaŭ-formatita kodo</string>
+  <string name="cd_textformat_header">Kapo</string>
+  <string name="cd_textformat_spoiler">Malkaŝaĵo</string>
+  <string name="composereply_redo">Refari</string>
+  <string name="composereply_undo">Malfari</string>
+  <string name="cd_composereply_undo">Malfari lastan ŝanĝon</string>
+  <string name="cd_composereply_redo">Refari lastan ŝanĝon</string>
+  <string name="composereply_empty_title_placeholder">Respondi</string>
+  <string name="composereply_error_empty_field">Ĉi tio ne malpleneblas ಠ_ಠ</string>
+  <string name="composereply_addlink_error_empty_field">Ĉi tio ne malpleneblas ಠ_ಠ</string>
+  <string name="composereply_addlink_title">Titolo</string>
+  <string name="composereply_addlink_url">Ligilo</string>
+  <string name="composereply_addlink_cancel">Rezigni</string>
+  <string name="composereply_addlink_insert">Enmeti</string>
+  <string name="composereply_paste_from_clipboard_hint">Tuŝetu por alglui ligilon de konservujo\n%s</string>
+  <string name="composereply_uploadimage_title">Aldoni titolon (nedeviga)</string>
+  <string name="composereply_uploadimage_cancel">Rezigni</string>
+  <string name="composereply_uploadimage_insert">Enmeti</string>
+  <string name="cd_composereply_uploadimage_image_being_uploaded">Bildo estas elŝutata</string>
+  <string name="composereply_uploadimage_uploading">Alŝutas…</string>
+  <string name="composereply_uploadimage_failed_generic">(╯°□°）╯︵ ┻━┻ \n\nMalsukcesis alŝuti bildon. Tuŝetu por reprovi.</string>
+  <string name="composereply_uploadimage_tap_to_retry">Tuŝetu por reprovi.</string>
+  <string name="composereply_uploadimage_error_message_period">.</string>
+  <!-- Full-stop in english. -->
+  <string name="composereply_uploadimage_error_file_size_too_large">¯\\_(ツ)_/¯ \n\nImgur malakceptis la bildon pro ĝia grandeco. Provu bildon kun malpli ol 10mb.</string>
+</resources>
